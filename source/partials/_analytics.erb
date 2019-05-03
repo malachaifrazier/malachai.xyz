@@ -6,3 +6,15 @@
     }}();
   </script>
 <% end %>
+
+<% if ENV["GOOGLE_TRACKING_ID"] %>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= ENV["SEGMENT_KEY"] %>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', "<%= ENV["SEGMENT_KEY"] %>");
+  </script>
+<% END %>

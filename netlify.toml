@@ -3,3 +3,4 @@
   publish = "build/"
 [template.environment]
   SEGMENT_KEY = "change me to your Segment API key"
+  GOOGLE_TRACKING_ID = "change me to your Google Analytics Tracking ID"

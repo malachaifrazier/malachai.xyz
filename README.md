@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a637f1d-cbe8-456b-a8e3-8bbef7445b90/deploy-status)](https://app.netlify.com/sites/optimistic-lamarr-2e2a20/deploys)
 # Project Name
 
 This app is built with [Middleman].
