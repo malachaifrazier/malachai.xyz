@@ -1,80 +1,130 @@
-// @import "bourbon";
-// @import "base/base";
-// @import "neat";
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono);
 
 // @import "reset/normalize";
+
 // @import "custom";
+@import "base/webfonts";
 
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+// Font Variables
+$roboto-slab: 'Roboto Slab', serif;
+$source-sans-pro: 'Source Sans Pro', Helvetica, sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$karla: 'Karla', sans-serif;
+$oxygen: 'Oxygen', sans-serif;
+$oxygen-mono: 'Oxygen Mono', monospace;
+$enable-responsive-font-sizes: true;
 
-/*
-  Identity by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
-// Breakpoints.
+// @media (min-width: 768px) {
+//   .bigger-text {
+//     font-size: 1.3em;
+//   }
+// }
 
-  @include breakpoints((
-    xlarge:    (1281px,   1680px   ),
-    large:     (961px,    1280px   ),
-    medium:    (737px,    960px    ),
-    small:     (481px,    736px    ),
-    xsmall:    (361px,    480px    ),
-    xxsmall:   (null,     360px    )
-  ));
 
-/* Icon (alt) */
+// @import 'libs/vars';
+// @import 'libs/functions';
+// @import 'libs/mixins';
+// @import 'libs/vendor';
+// @import 'libs/breakpoints';
 
-  @mixin icon-alt($content: false, $link: false) {
-    @include icon($content);
-    $size: _size(border-width) * 1.25;
+// Base.
 
-    &:before {
-      color: _palette(bg);
-      text-shadow: $size 0px 0px _palette(border),
-            ($size * -1) 0px 0px _palette(border),
-            0px $size 0px _palette(border),
-            0px ($size * -1) 0px _palette(border);
+  // @import 'base/reset';
+  // @import 'base/page';
+  // @import 'base/typography';
 
-    }
+// Component.
 
-    @if $link {
-      &:hover {
-        &:before {
-          text-shadow: $size 0px 0px _palette(highlight),
-                ($size * -1) 0px 0px _palette(highlight),
-                0px $size 0px _palette(highlight),
-                0px ($size * -1) 0px _palette(highlight);
+  // @import 'components/form';
+  // @import 'components/icon';
+  // @import 'components/list';
+  // @import 'components/actions';
+  // @import 'components/icons';
+  // @import 'components/button';
+
+// Layout.
+
+  // @import 'layout/main';
+  // @import 'layout/footer';
+  // @import 'layout/wrapper';
+  // @import 'css/main.css';
+
+// Styles
+body {
+  font-family: $oxygen-mono;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $karla;
+  // font-weight: normal;
+}
+
+.bigger-text {
+  // font-size: 1.01em;
+}
+
+.red-background {
+  color: #fff;
+  background-color: #f33 !important;
+  padding: 1px 8px;//0.19em;
+}
+
+.icons {
+  list-style: none;
+}
+
+/* Footer */
+
+  #footer {
+    // @include vendor('align-self', 'flex-end');
+    width: 100%;
+    // padding: _size(element-margin) 0 0 0;
+    // color: rgba(255,255,255,0.75);
+    cursor: default;
+    text-align: center;
+
+    .copyright {
+      margin: 0;
+      padding: 0;
+      font-size: 0.9em;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        // margin: 0 0 0 (0.85em - (_size(letter-spacing) * 2));
+        padding: 0 0 0 0.85em;
+        // border-left: solid _size(border-width) rgba(255,255,255,0.5);
+        line-height: 1;
+
+        &:first-child {
+          border-left: 0;
         }
       }
     }
   }
 
-// Base.
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 8px;
+  border-top: 1px solid #f33;
+}
 
-  @import 'base/reset';
-  @import 'base/page';
-  @import 'base/typography';
+@media (max-width: 768px) {
+  .bigger-text {
+    font-size: 1.1em;
+  }
+}
 
-// Component.
-
-  @import 'components/form';
-  @import 'components/icon';
-  @import 'components/list';
-  @import 'components/actions';
-  @import 'components/icons';
-  @import 'components/button';
-
-// Layout.
-
-  @import 'layout/main';
-  @import 'layout/footer';
-  @import 'layout/wrapper';
-  // @import 'css/main.css';
-
+@media (max-width: 300px) {
+  .bigger-text {
+    font-size: 100%;
+  }
+}
