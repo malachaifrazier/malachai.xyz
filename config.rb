@@ -1,6 +1,25 @@
 activate :aria_current
 activate :autoprefixer
 activate :inline_svg
+# activate :blog do |blog|
+#   blog.prefix            = "blog"
+#   blog.layout            = "blog_layout"
+#   blog.summary_separator = /(READMORE)/
+#   blog.summary_length    = 300
+#   blog.permalink         = '{title}.html'
+#   blog.sources           = 'posts/{year}-{month}-{day}-{title}.html'
+
+#   # # Enable pagination
+#   blog.paginate = true
+#   blog.per_page = 5
+#   # blog.taglink = 'categories/{tag}.html'
+#   # blog.layout = 'post'
+
+#   # blog.default_extension = '.md'
+#   # blog.tag_template = 'tag.html'
+#   # blog.calendar_template = 'calendar.html'
+#   # blog.new_article_template = 'source/article.slim'
+# end
 
 set :css_dir, "assets/stylesheets"
 set :fonts_dir, "assets/fonts"
@@ -31,5 +50,7 @@ end
 
 configure :development do
   activate :livereload
+  activate :pry
 end
 
+# Time.zone = 'Detroit'
