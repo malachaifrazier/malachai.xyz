@@ -8,7 +8,7 @@
 // @import "reset/normalize";
 
 // @import "custom";
-@import "base/webfonts";
+// @import "base/webfonts";
 
 // Font Variables
 $roboto-slab: 'Roboto Slab', serif;
@@ -18,42 +18,6 @@ $karla: 'Karla', sans-serif;
 $oxygen: 'Oxygen', sans-serif;
 $oxygen-mono: 'Oxygen Mono', monospace;
 $enable-responsive-font-sizes: true;
-
-
-// @media (min-width: 768px) {
-//   .bigger-text {
-//     font-size: 1.3em;
-//   }
-// }
-
-
-// @import 'libs/vars';
-// @import 'libs/functions';
-// @import 'libs/mixins';
-// @import 'libs/vendor';
-// @import 'libs/breakpoints';
-
-// Base.
-
-  // @import 'base/reset';
-  // @import 'base/page';
-  // @import 'base/typography';
-
-// Component.
-
-  // @import 'components/form';
-  // @import 'components/icon';
-  // @import 'components/list';
-  // @import 'components/actions';
-  // @import 'components/icons';
-  // @import 'components/button';
-
-// Layout.
-
-  // @import 'layout/main';
-  // @import 'layout/footer';
-  // @import 'layout/wrapper';
-  // @import 'css/main.css';
 
 // Styles
 body {
