@@ -1,9 +1,3 @@
-GIT
-  remote: git@github.com:github/gemoji.git
-  revision: 22b920f8bd6c2e453832955fe9e13971b95772c5
-  branch: master
-  specs:
-
 PATH
   remote: gemoji
   specs:
