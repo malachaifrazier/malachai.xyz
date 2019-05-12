@@ -1,3 +1,8 @@
+PATH
+  remote: lib/gemoji
+  specs:
+    gemoji (3.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -147,6 +152,7 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   builder
+  gemoji!
   middleman
   middleman-aria_current
   middleman-autoprefixer

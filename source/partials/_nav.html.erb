@@ -1,0 +1,50 @@
+<header class="head-main">
+  <div class="navbar navbar-dark bg-dark box-shadow">
+    <div class="container d-flex">
+      <!-- <a href="/" class="navbar-brand d-flex align-items-center">
+        <strong>Malachai Frazier</strong>
+      </a> -->
+      <a class="nav-button ml-auto"><span id="nav-icon3">
+        <span></span><span></span><span></span><span></span></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="fixed-top main-menu">
+    <div class="flex-center p-5">
+      <ul class="nav flex-column">
+        <!-- Either Home or nothing -->
+        <li class="nav-item delay-1">
+          <a class="nav-link" href="/">
+            <%= Emoji.find_by_alias("house").raw %>
+            Home
+          </a>
+        </li>
+        <li class="nav-item delay-2">
+          <a class="nav-link" href="/blog.html">
+            <%= Emoji.find_by_alias("notebook").raw %>
+            Blog
+          </a>
+        </li>
+        <li class="nav-item delay-3">
+          <a class="nav-link" href="/services.html">
+            <%= Emoji.find_by_alias("muscle").raw %>
+            Services
+          </a>
+        </li>
+        <li class="nav-item delay-4">
+          <a class="nav-link" href="/works.html">
+            <%= Emoji.find_by_alias("man_factory_worker").raw %>
+            Works
+          </a>
+        </li>
+        <li class="nav-item delay-5">
+          <a class="nav-link" href="/schedule-a-call.html">
+            <%= Emoji.find_by_alias("calendar").raw %>
+            Schedule a call
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

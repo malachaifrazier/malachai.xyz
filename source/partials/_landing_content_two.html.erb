@@ -1,0 +1,220 @@
+<div class="d-md-flex ">
+  <!-- First Half -->
+  <div class="w-100 bg-indigo h-md-100">
+    <div class="text-white h-100 text-center">
+      <div class="logoarea pt-5">
+        <article class="row-fluid">
+          <header class="mx-auto">
+            <div class="avatar">
+              <img src="assets/images/pic_of_me.jpeg" class="img-thumbnail img-fluid">
+            </div>
+          </header>
+        </article>
+
+        <article class="row-fluid pt-4">
+          <header class="col-lg-12 mx-auto">
+            <h1 class="">
+              <%= Emoji.find_by_alias("cowboy_hat_face").raw %>
+              That's me.
+              <!-- Hide on xs and sm -->
+              <span class="d-none d-sm-inline-block d-sm-none d-md-inline-block">
+                <%= Emoji.find_by_alias("point_up").raw %>
+              </span>
+            </h1>
+          </header>
+        </article>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Half -->
+  <div class="w-100 pt-3 bg-white h-md-100">
+    <div class="p-5">
+      <h3 class="pb-3">
+        <span class="background-colors red">
+          <%#= Emoji.find_by_alias("moneybag").raw %>
+          I help businesses earn more money.
+        </span>
+      </h3>
+
+      <h3>
+        Freelance Technologist & Consultant <%= Emoji.find_by_alias("necktie").raw %>
+      </h3>
+      <p class="lead">
+        I'm a self-taught, full-stack developer (Ruby on Rails is my go-to
+         framework) with a deep understanding of the entire web development
+         process, including responsive design, development, and deployment to
+         popular hosted platforms (<abbr title="Amazon Web Service" class="initialism">AWS</abbr>, Heroku, Netlify).
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="p-0 text-white background-colors red">
+  <div class="p-4">
+    <h3 class="pb-5 text-center">
+      <span class="background-colors white">
+        <%= Emoji.find_by_alias("fire").raw %>
+        Services <%#= Emoji.find_by_alias("fire").raw %>
+      </span>
+    </h3>
+
+    <div class="container">
+      <div class="row">
+        <ul class="col list-unstyled">
+          <li class="">
+            <h3 class="title-secondary">
+              <%#= Emoji.find_by_alias("paintbrush").raw %>
+              <u>Creative & UX</u>
+            </h3>
+            <ul>
+              <li>
+                Product Design Sprints
+              </li>
+              <li>
+                Research & Usability Testing
+              </li>
+              <li>
+                User Interface Design
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="col list-unstyled">
+          <li class="">
+            <h3 class="title-secondary">
+              <%#= Emoji.find_by_alias("memo").raw %>
+              <u>Operations</u>
+            </h3>
+            <ul>
+              <li>
+                Copywriting
+              </li>
+              <li>
+                Sales
+              </li>
+              <li>
+                Strategy & Direction
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="col list-unstyled">
+          <li class="">
+            <h3 class="title-secondary">
+              <%#= Emoji.find_by_alias("desktop_computer").raw %>
+              <u>Software Development</u>
+            </h3>
+            <ul>
+              <li>
+                Ruby on Rails
+              </li>
+              <li>
+                React & React Native
+              </li>
+              <li>
+                EmberJS
+              </li>
+              <li>
+                AngularJS
+              </li>
+              <li>
+                Code Audits/Security/Performance
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="p-0 bg-white">
+  <div class="p-4">
+    <h3 class="pb-3 text-center">
+
+      <span class="background-colors red">
+        <%= Emoji.find_by_alias("love_you_gesture").raw %>
+        Projects Shortlist
+      </span>
+    </h3>
+
+    <p class="lead">Here are some links to a few companies that I've worked on or with in no particular order.
+    Usually as a full-stack developer:</p>
+
+    <ol class="pb-3">
+      <li>
+        <a href="https://www.quikly.com/"
+         target="_blank" alt="Quikly" title="Quikly Link">
+          Quikly
+        </a>
+        - Marketing and Advertising Platform - Senior Rails Developer.
+      </li>
+      <li>
+        <a href="https://goslope.com/"
+         target="_blank" alt="GoSlope" title="Goslope Link">
+          GoSlope
+        </a>
+        - CMS for Video - Solo Senior Rails Developer.
+      </li>
+      <li>
+        <a href="http://tryskillo.com/"
+         target="_blank" alt="Skillo" title="Skillo Link">
+          Skillo
+        </a>
+        - Formally in EdTech, now Content Sharing Platform - Senior Rails Developer (member of team, formally Ginkgotree).
+      </li>
+      <li>
+        <a href="https://www.bostonlogic.com/"
+         target="_blank" alt="Bostonlogic" title="Bostonlogic Link">
+          Bostonlogic
+        </a>
+        - Real Estate CRM & CMS - Senior Rails Developer.
+      </li>
+      <li>
+        <a href="https://www.impactmapper.com/"
+         target="_blank" alt="Impactmapper" title="Impactmapper Link">
+          Impactmapper
+        </a>
+        - Social Analytics for Non-Profits - Senior Rails Developer.
+      </li>
+      <li>
+        <a href="https://www.avifoodsystems.com/"
+         target="_blank" alt="Avi Foodsystems" title="Avi Foodsystems Link">
+          Avi Foodsystems
+        </a>
+        - Hospitality and Food Service - Senior Rails Developer.
+      </li>
+      <li>
+        <a href="https://www.levelsetsolutions.com/"
+         target="_blank" alt="LevelSet Solutions" title="LevelSet Solutions Link">
+          LevelSet Solutions
+        </a>
+        - Digital Marketing Agency - Software Engineer with Rails, iOS.
+      </li>
+      <li>
+       <a href="https://www.eflexsystems.com/"
+         target="_blank" alt="eFlex Systems" title="eFlex Systems Link">
+          eFlex Systems
+        </a>
+        - Manufacturing and Information Technology - Software Engineer with NodeJS, IoT.
+      </li>
+      <li>
+        <a href="http://fundercove.com/"
+         target="_blank" alt="Fundercove" title="Fundercove Link">
+          Fundercove
+        </a>
+         - Crowdfunding and Crowdinvesting Platform - Founder and Solo Ruby on Rails Developer (in active development).
+      </li>
+    </ol>
+
+    <p class="">When would you like to connect?
+      <%= Emoji.find_by_alias("mailbox").raw %>
+      <span class='background-colors red'>malachai@fundercove.com</span>
+    </p>
+  </div>
+</div>
