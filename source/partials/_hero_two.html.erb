@@ -1,5 +1,5 @@
 <header id="header" class="masthead bg-dark">
-  <div class="container-fluid px-3">
+  <div class="container-fluid px-3 text-center">
     <!-- Page Heading -->
     <h1 class="text-white mb-4" id="page-heading">
       <span class="background-colors grey">Malachai</span>
@@ -7,9 +7,11 @@
     </h1>
     <!-- Page Subheading -->
     <h2 class="text-white mb-4" id="page-subheading" style="font-size: 28px;">
-      Web Developer
+      <%#= Emoji.find_by_alias("man_technologist").raw %>
+      <img src="assets/images/male-technologist-type-5.png" class="male-technologist">
+       Web Developer
       <span class="text-danger">·</span>
-      Designer
+      Designer <%= Emoji.find_by_alias("computer").raw %>
     </h2>
 
     <ul class="icons list-inline mb-0">

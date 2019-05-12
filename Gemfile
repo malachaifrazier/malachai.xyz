@@ -10,6 +10,7 @@ gem "middleman-aria_current"
 gem "middleman-inline_svg"
 gem "middleman-autoprefixer"
 gem "middleman-minify-html"
+gem "middleman-livereload"
 # https://github.com/middleman/middleman-blog
 # gem "middleman-blog"
 # https://github.com/AndrewKvalheim/middleman-pry
@@ -17,4 +18,4 @@ gem "middleman-pry"
 gem "neat"
 gem "redcarpet"
 gem "sassc"
-gem "middleman-livereload"
+gem "gemoji", git: "git@github.com:github/gemoji.git", branch: "master"

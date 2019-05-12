@@ -49,6 +49,11 @@ h1, h2, h3, h4, h5, h6 {
   &.grey {
     background-color: grey;
   }
+
+  &.white {
+    background-color: #ffffff;
+    color: #f33;
+  }
 }
 
 .icons {
@@ -149,8 +154,24 @@ header.masthead {
   background: indigo;
 }
 
+.bg-red {
+  background: yellow;
+}
+
+.bg-yellow {
+  background: yellow;
+}
+
 .text-cyan {
   color: #35bdff;
+}
+
+.icon-list {
+  ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
