@@ -40,6 +40,10 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/*.xml", layout: false
 
+["schedule-a-call", "services", "works", "blog"].each do |name|
+  page "/#{name}.html"
+end
+
 configure :production do
   activate :asset_hash
   activate :gzip
