@@ -1,5 +1,5 @@
 PATH
-  remote: gemoji
+  remote: lib/gemoji
   specs:
     gemoji (3.0.1)
 
