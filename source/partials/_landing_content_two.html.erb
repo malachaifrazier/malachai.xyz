@@ -2,7 +2,7 @@
   <!-- First Half -->
   <div class="w-100 bg-indigo h-md-100">
     <div class="text-white h-100 text-center">
-      <div class="logoarea pt-5 pb-5">
+      <div class="logoarea pt-5">
         <article class="row-fluid">
           <header class="mx-auto">
             <div class="avatar">
@@ -16,7 +16,10 @@
             <h1 class="">
               <%= Emoji.find_by_alias("cowboy_hat_face").raw %>
               That's me.
-              <%= Emoji.find_by_alias("point_up").raw %>
+              <!-- Hide on xs and sm -->
+              <span class="d-none d-sm-inline-block d-sm-none d-md-inline-block">
+                <%= Emoji.find_by_alias("point_up").raw %>
+              </span>
             </h1>
           </header>
         </article>
@@ -26,11 +29,11 @@
   </div>
 
   <!-- Second Half -->
-  <div class="w-100 p-0 bg-white h-md-100">
+  <div class="w-100 pt-3 bg-white h-md-100">
     <div class="p-5">
-      <h3 class="pb-5">
+      <h3 class="pb-3">
         <span class="background-colors red">
-          <%= Emoji.find_by_alias("moneybag").raw %>
+          <%#= Emoji.find_by_alias("moneybag").raw %>
           I help businesses earn more money.
         </span>
       </h3>
@@ -49,12 +52,11 @@
 </div>
 
 <div class="p-0 text-white background-colors red">
-  <div class="p-5">
+  <div class="p-4">
     <h3 class="pb-5 text-center">
-
       <span class="background-colors white">
-        <%= Emoji.find_by_alias("love_you_gesture").raw %>
-        Services <%= Emoji.find_by_alias("fire").raw %>
+        <%= Emoji.find_by_alias("fire").raw %>
+        Services <%#= Emoji.find_by_alias("fire").raw %>
       </span>
     </h3>
 
@@ -131,98 +133,98 @@
   </div>
 </div>
 
-<div class="container-fluid my-4">
-  <article class="row pt-1">
-    <main class=" col-sm-12 col-lg-8 mt-4 mx-auto">
-      <p>
-        <h3>
-          <u>Project Shortlist</u>
-          <small class="text-muted">
-            <span class="d-block d-sm-inline-block">
-              Ruby on Rails & NodeJS Apps
-            </span>
-          </small>
-        </h3>
-        <p>Here are some links to a few companies that I've worked on or with in no particular order.
-        Usually as a full-stack developer:</p>
-        <ol>
-          <li>
-            <a href="https://www.quikly.com/"
-             target="_blank" alt="Quikly" title="Quikly Link">
-              Quikly
-            </a>
-            - Marketing and Advertising Platform - Senior Rails Developer.
-          </li>
-          <li>
-            <a href="https://goslope.com/"
-             target="_blank" alt="GoSlope" title="Goslope Link">
-              GoSlope
-            </a>
-            - CMS for Video - Solo Senior Rails Developer.
-          </li>
-          <li>
-            <a href="http://tryskillo.com/"
-             target="_blank" alt="Skillo" title="Skillo Link">
-              Skillo
-            </a>
-            - Formally in EdTech, now Content Sharing Platform - Senior Rails Developer (member of team, formally Ginkgotree).
-          </li>
-          <li>
-            <a href="https://www.bostonlogic.com/"
-             target="_blank" alt="Bostonlogic" title="Bostonlogic Link">
-              Bostonlogic
-            </a>
-            - Real Estate CRM & CMS - Senior Rails Developer.
-          </li>
-          <li>
-            <a href="https://www.impactmapper.com/"
-             target="_blank" alt="Impactmapper" title="Impactmapper Link">
-              Impactmapper
-            </a>
-            - Social Analytics for Non-Profits - Senior Rails Developer.
-          </li>
-          <li>
-            <a href="https://www.avifoodsystems.com/"
-             target="_blank" alt="Avi Foodsystems" title="Avi Foodsystems Link">
-              Avi Foodsystems
-            </a>
-            - Hospitality and Food Service - Senior Rails Developer.
-          </li>
-          <li>
-            <a href="https://www.levelsetsolutions.com/"
-             target="_blank" alt="LevelSet Solutions" title="LevelSet Solutions Link">
-              LevelSet Solutions
-            </a>
-            - Digital Marketing Agency - Software Engineer with Rails, iOS.
-          </li>
-          <li>
-           <a href="https://www.eflexsystems.com/"
-             target="_blank" alt="eFlex Systems" title="eFlex Systems Link">
-              eFlex Systems
-            </a>
-            - Manufacturing and Information Technology - Software Engineer with NodeJS, IoT.
-          </li>
-          <li>
-            <a href="http://fundercove.com/"
-             target="_blank" alt="Fundercove" title="Fundercove Link">
-              Fundercove
-            </a>
-             - Crowdfunding and Crowdinvesting Platform - Founder and Solo Ruby on Rails Developer (in active development).
-          </li>
-        </ol>
-      </p>
-    </main>
-  </article>
+<div class="p-0 bg-white">
+  <div class="p-4">
+    <h3 class="pb-3 text-center">
 
-  <article class="row pt-4">
-    <header class="col-sm-12 col-lg-8 mx-auto ">
-      <p class="">When would you like to connect?
-        <%= Emoji.find_by_alias("mailbox").raw %>
-        <span class='background-colors red'>malachai@fundercove.com</span>
-      </p>
-    </header>
-  </article>
+      <span class="background-colors red">
+        <%= Emoji.find_by_alias("love_you_gesture").raw %>
+        Projects Shortlist
+      </span>
+    </h3>
+
+    <p class="lead">Here are some links to a few companies that I've worked on or with in no particular order.
+    Usually as a full-stack developer:</p>
+
+    <ol class="pb-3">
+      <li>
+        <a href="https://www.quikly.com/"
+         target="_blank" alt="Quikly" title="Quikly Link">
+          Quikly
+        </a>
+        - Marketing and Advertising Platform - Senior Rails Developer.
+      </li>
+      <li>
+        <a href="https://goslope.com/"
+         target="_blank" alt="GoSlope" title="Goslope Link">
+          GoSlope
+        </a>
+        - CMS for Video - Solo Senior Rails Developer.
+      </li>
+      <li>
+        <a href="http://tryskillo.com/"
+         target="_blank" alt="Skillo" title="Skillo Link">
+          Skillo
+        </a>
+        - Formally in EdTech, now Content Sharing Platform - Senior Rails Developer (member of team, formally Ginkgotree).
+      </li>
+      <li>
+        <a href="https://www.bostonlogic.com/"
+         target="_blank" alt="Bostonlogic" title="Bostonlogic Link">
+          Bostonlogic
+        </a>
+        - Real Estate CRM & CMS - Senior Rails Developer.
+      </li>
+      <li>
+        <a href="https://www.impactmapper.com/"
+         target="_blank" alt="Impactmapper" title="Impactmapper Link">
+          Impactmapper
+        </a>
+        - Social Analytics for Non-Profits - Senior Rails Developer.
+      </li>
+      <li>
+        <a href="https://www.avifoodsystems.com/"
+         target="_blank" alt="Avi Foodsystems" title="Avi Foodsystems Link">
+          Avi Foodsystems
+        </a>
+        - Hospitality and Food Service - Senior Rails Developer.
+      </li>
+      <li>
+        <a href="https://www.levelsetsolutions.com/"
+         target="_blank" alt="LevelSet Solutions" title="LevelSet Solutions Link">
+          LevelSet Solutions
+        </a>
+        - Digital Marketing Agency - Software Engineer with Rails, iOS.
+      </li>
+      <li>
+       <a href="https://www.eflexsystems.com/"
+         target="_blank" alt="eFlex Systems" title="eFlex Systems Link">
+          eFlex Systems
+        </a>
+        - Manufacturing and Information Technology - Software Engineer with NodeJS, IoT.
+      </li>
+      <li>
+        <a href="http://fundercove.com/"
+         target="_blank" alt="Fundercove" title="Fundercove Link">
+          Fundercove
+        </a>
+         - Crowdfunding and Crowdinvesting Platform - Founder and Solo Ruby on Rails Developer (in active development).
+      </li>
+    </ol>
+
+    <p class="">When would you like to connect?
+      <%= Emoji.find_by_alias("mailbox").raw %>
+      <span class='background-colors red'>malachai@fundercove.com</span>
+    </p>
+  </div>
 </div>
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget"
+ data-url="https://calendly.com/malachaifrazier"
+ style="min-width:320px;height:580px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
 
 <footer id="footer" class="footer mt-auto py-3">
   <div class="container-fluid">
