@@ -13,7 +13,6 @@ gem "middleman-minify-html"
 gem "middleman-livereload"
 # https://github.com/middleman/middleman-blog
 # gem "middleman-blog"
-# https://github.com/AndrewKvalheim/middleman-pry
 gem "middleman-pry"
 gem "neat"
 gem "redcarpet"
