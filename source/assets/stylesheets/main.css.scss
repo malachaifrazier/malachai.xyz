@@ -6,6 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono);
 @import "components/nav";
 @import "components/icons";
+@import "components/wiggle";
 
 // Font Variables
 $roboto-slab: 'Roboto Slab', serif;
@@ -100,7 +101,7 @@ header {
   &.masthead {
     border-bottom: 57px solid $red;
     padding-bottom: 13rem;
-    padding-top: 8rem;
+    padding-top: 4.41rem;
 
   }
   // border-bottom: 57px solid #f33;
