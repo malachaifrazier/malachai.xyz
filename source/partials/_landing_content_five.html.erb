@@ -1,0 +1,49 @@
+<div class="d-md-flex pt-3 pb-5">
+  <div class="w-100 pt-3 bg-white h-lg-100">
+    <div class="h-100 text-center">
+      <div class="row-fluid">
+        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-4 mx-auto">
+          <div class="card ">
+            <img src="assets/images/pic_of_me.jpeg" class="card-img-top">
+            <div class="card-body ">
+              <img src="assets/images/male-technologist-type-5.png" class="male-technologist">
+              <h2 class="card-title">
+                <u class="">That's me.</u>
+              </h2>
+
+              <h4 class="card-subtitle mb-2 text-muted ">
+                Freelance Tech Consultant.
+              </h4>
+
+              <p class="card-text text-justify">
+                I'm a self-taught, full-stack developer
+                (<a href="https://rubyonrails.org/" alt="Ruby on Rails Framework Link"
+                 title="Ruby on Rails Framework" target="_blank">Ruby on Rails</a> is my go-to
+                 web framework) with a deep understanding of the entire <span class="mark">web development</span>
+                 process, including responsive design, development, and deployment to
+                 popular hosted platforms like <abbr title="Amazon Web Service" class="initialism">
+                 <a href="https://aws.amazon.com/" alt="AWS Link"
+                 title="Amazon Web Service" target="_blank">AWS</a>
+                 </abbr>,
+                 <a href="https://www.heroku.com/" alt="Heroku PaaS Link"
+                 title="Heroku PaaS" target="_blank">Heroku</a> and
+                 <a href="https://www.netlify.com/" alt="Netlify Link"
+                 title="Netlify" target="_blank">Netlify</a>.
+              </p>
+              <hr>
+
+              <a class="wiggle btn btn-primary btn-lg " href="/schedule-a-call.html" role="button">
+                <%= Emoji.find_by_alias("calendar").raw %>
+                Book a call
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= partial "partials/services_list" %>
+<%= partial "partials/projects_list" %>
+
