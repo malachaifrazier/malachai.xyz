@@ -21,10 +21,10 @@ activate :inline_svg
 #   # blog.new_article_template = 'source/article.slim'
 # end
 
-set :css_dir, "assets/stylesheets"
-set :fonts_dir, "assets/fonts"
-set :images_dir, "assets/images"
-set :js_dir, "assets/javascripts"
+set :css_dir, 'assets/stylesheets'
+set :fonts_dir, 'assets/fonts'
+set :images_dir, 'assets/images'
+set :js_dir, 'assets/javascripts'
 set :markdown,
   autolink: true,
   fenced_code_blocks: true,
@@ -61,7 +61,7 @@ configure :development do
 end
 
 configure :build do
-  config[:host] = "https://www.malachai.xyz"
+  config[:host] = 'https://www.malachai.xyz'
 end
 
 # Time.zone = 'Detroit'
