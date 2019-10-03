@@ -45,6 +45,8 @@ page "/*.xml", layout: false
 end
 
 configure :production do
+  # https://middlemanapp.com/advanced/pretty-urls/
+  activate :directory_indexes
   activate :asset_hash
   activate :gzip
   activate :minify_css
@@ -53,8 +55,13 @@ configure :production do
 end
 
 configure :development do
+  set      :debug_assets, true
   activate :livereload
   activate :pry
+end
+
+configure :build do
+  config[:host] = "https://www.malachai.xyz"
 end
 
 # Time.zone = 'Detroit'
