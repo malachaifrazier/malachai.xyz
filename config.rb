@@ -42,7 +42,9 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/*.xml", layout: false
 
-["schedule-a-call", "services", "works", "blog", "products", "books"].each do |name|
+[
+  'schedule-a-call', 'services', 'works', 'blog', 'products', 'books'
+].each do |name|
   page "/#{name}.html"
 end
 
