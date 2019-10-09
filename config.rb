@@ -1,6 +1,8 @@
 activate :aria_current
 activate :autoprefixer
 activate :inline_svg
+# https://middlemanapp.com/advanced/pretty-urls/
+activate :directory_indexes
 # activate :blog do |blog|
 #   blog.prefix            = "blog"
 #   blog.layout            = "blog_layout"
@@ -40,13 +42,11 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/*.xml", layout: false
 
-["schedule-a-call", "services", "works", "blog"].each do |name|
+["schedule-a-call", "services", "works", "blog", "products", "books"].each do |name|
   page "/#{name}.html"
 end
 
 configure :production do
-  # https://middlemanapp.com/advanced/pretty-urls/
-  activate :directory_indexes
   activate :asset_hash
   activate :gzip
   activate :minify_css
