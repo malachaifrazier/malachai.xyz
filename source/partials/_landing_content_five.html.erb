@@ -2,20 +2,16 @@
   <div class="w-100 pt-3 bg-white h-lg-100">
     <div class="h-100 text-center">
       <div class="row-fluid">
-        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-4 mx-auto">
-          <div class="card ">
+        <div class="col-sm-8 col-md-5 col-lg-4 mx-auto ">
+          <div class="card w-75">
             <img src="assets/images/pic_of_me.jpeg" class="card-img-top">
             <div class="card-body ">
               <img src="assets/images/male-technologist-type-5.png" class="male-technologist">
-              <h2 class="card-title">
-                <u class="">That's me.</u>
-              </h2>
+              <h1 class="card-title">
+                That's me.
+              </h1>
 
-              <h4 class="card-subtitle mb-2 text-muted ">
-                Freelance Tech Consultant.
-              </h4>
-
-              <p class="card-text text-justify">
+              <p class="card-text text-left">
                 I'm a self-taught, full-stack developer
                 (<a href="https://rubyonrails.org/" alt="Ruby on Rails Framework Link"
                  title="Ruby on Rails Framework" target="_blank">Ruby on Rails</a> is my go-to
@@ -44,6 +40,32 @@
   </div>
 </div>
 
-<%= partial "partials/services_list" %>
-<%= partial "partials/projects_list" %>
+<div class="p-0 bg-white">
+  <p class="pb-5 text-center">
+    <a class="wiggle btn btn-success btn-lg m-5" href="/services" role="button">
+      <%= Emoji.find_by_alias("muscle").raw %>
+      My Services
+    </a>
+
+    <a class="wiggle btn btn-warning btn-lg m-5" href="/works" role="button">
+      <%= Emoji.find_by_alias("computer").raw %>
+      My Work
+    </a>
+
+    <a class="wiggle btn btn-primary btn-lg m-4" href="/books" role="button">
+      <%= Emoji.find_by_alias("book").raw %>
+      My Book
+    </a>
+
+    <!-- <a class="wiggle btn btn-primary btn-lg m-5" href="/products" role="button">
+      <%#= Emoji.find_by_alias("man_factory_worker").raw %>
+      My Products
+    </a> -->
+
+    <!-- <a class="wiggle btn btn-primary btn-lg m-5" href="/schedule-a-call.html" role="button">
+      <%#= Emoji.find_by_alias("calendar").raw %>
+      Schedule a call
+    </a> -->
+  </p>
+</div>
 

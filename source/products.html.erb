@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container h-100">
   <h1 class="display-3 text-center pt-5">
-    Malachai's Bite Sized Blog.
+    Software Products & Projects.
     <%#= Emoji.find_by_alias("nerd_face").raw %>
   </h1>
 
@@ -20,16 +20,17 @@
         My Services
       </a>
 
+      <a class="wiggle btn btn-primary btn-lg m-4" href="/books" role="button">
+        <%= Emoji.find_by_alias("book").raw %>
+        My Book
+      </a>
+
       <a class="wiggle btn btn-primary btn-lg m-4" href="/works" role="button">
         <%= Emoji.find_by_alias("computer").raw %>
         My Work
-      </a>
-
-      <a class="wiggle btn btn-primary btn-lg m-4" href="/products" role="button">
-        <%= Emoji.find_by_alias("man_factory_worker").raw %>
-        My Products
       </a>
     </p>
   </div>
 
 </div>
+

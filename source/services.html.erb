@@ -1,7 +1,182 @@
 <div class="container">
-  <h1 class="display-3 text-center pt-5">
-    Coming soon.
-    <%= Emoji.find_by_alias("nerd_face").raw %>
+  <h1 class="display-4 text-center pt-5">
+    Freelance Services.
+    <%#= Emoji.find_by_alias("nerd_face").raw %>
   </h1>
 
+  <p class="lead text-center mb-5">
+    All pricing in USD. Billed via invoice. All terms negotiable, of course.
+  </p>
+
+  <div class="row mb-3">
+    <div class="col-sm-4 col-md-6 mb-2">
+      <div id="web-dev-one-card" class="card border-dark m-3 h-100">
+        <div class="card-body text-dark">
+          <h4 class="card-title">
+            Web Developer One
+          </h4>
+          <h6 class="card-subtitle mb-2 text-muted">
+            - $1,500/mo Retainer
+          </h6>
+          <hr>
+          <p class="card-text">
+            <ul>
+              <li>Mobile ready Web Design</li>
+              <li>Frontend Development</li>
+              <li>Backend Development</li>
+              <li>3rd Party APIs</li>
+            </ul>
+          </p>
+        </div>
+        <div class="card-footer bg-transparent text-muted small">
+          <b>Bonuses:</b> <br>
+          - 10% off additional development services<br>
+          - 30% down Net-15 or 50% down Net-30.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-6">
+      <div id="support-maintainance-card" class="card border-dark m-3 h-100">
+        <div class="card-body text-dark">
+          <h4 class="card-title">
+             Support & Maintenance
+          </h4>
+          <h6 class="card-subtitle mb-2 text-muted">
+            - $2,250/mo Retainer
+          </h6>
+          <hr>
+          <p class="card-text">
+            <ul>
+              <li>Mobile ready Web Design</li>
+              <li>Frontend Development</li>
+              <li>Backend Development</li>
+              <li>3rd Party APIs</li>
+              <li>Server and Application Monitoring</li>
+              <li>User Experience/Behavior Monitoring and Analysis</li>
+            </ul>
+          </p>
+        </div>
+        <div class="card-footer bg-transparent text-muted small">
+          <b>Bonuses:</b> <br>
+          - 10% off additional development services<br>
+          - 30% down Net-15 or 50% down Net-30.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-sm-4 col-md-6 mb-2">
+      <div id="marketing-site-card" class="card border-dark m-3 h-100">
+        <div class="card-body text-dark">
+          <h4 class="card-title">
+             Marketing Web Site
+          </h4>
+          <h6 class="card-subtitle mb-2 text-muted">
+            - $1,500 Fee
+          </h6>
+          <hr>
+          <p class="card-text">
+            <ul>
+              <li>Mobile ready Web Design</li>
+              <li>Frontend Development</li>
+              <li>3-5 day turn-around</li>
+              <li>One month of support via chat, email and phone</li>
+              <li>Domain purchase and/or transfer</li>
+              <li>Domain hosting with SSL</li>
+              <li>
+                Pages built and supported:
+                <ul>
+                  <li>Landing</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                  <li>Terms</li>
+                  <li>Privacy Policy</li>
+                  <li>Product Pages</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="card-footer bg-transparent text-muted small">
+          <b>Bonuses:</b> <br>
+          - 10% off additional development services.<br>
+          - 30% down Net-15 or 50% down Net-30.<br>
+          - Add-ons: Google Analytics integration, email marketing integration ($100 each).
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-6">
+      <div id="web-ecommerce-card" class="card border-dark m-3 h-100">
+        <div class="card-body text-dark">
+          <h4 class="card-title">
+            Web Application  e-Commerce
+          </h4>
+          <h6 class="card-subtitle mb-2 text-muted">
+            - $5,000 Fee
+          </h6>
+          <hr>
+          <p class="card-text">
+            <ul>
+              <li>Mobile ready Web Design</li>
+              <li>Frontend Development</li>
+              <li>Backend Development</li>
+              <li>3rd Party APIs</li>
+              <li>Server and Application Monitoring</li>
+              <li>User Experience/Behavior Monitoring and Analysis</li>
+              <li>30-day turn-around</li>
+              <li>Three months of support via chat, email and phone</li>
+              <li>Transactional email setup</li>
+              <li>Online store w/unlimited SKUs</li>
+              <li>Checkout and shopping Cart w/payment processor integrations</li>
+              <li>
+                Pages built and supported:
+                <ul>
+                  <li>Landing</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                  <li>Terms</li>
+                  <li>Privacy Policy</li>
+                  <li>Product Pages</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="card-footer bg-transparent text-muted small">
+          <b>Bonuses:</b> <br>
+          - 10% off additional development services<br>
+          - 30% down Net-15 or 50% down Net-30.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-0 bg-white">
+    <p class="pb-5 text-center">
+      <a class="wiggle btn btn-danger btn-lg m-4" href="/schedule-a-call.html" role="button">
+        <%= Emoji.find_by_alias("calendar").raw %>
+        Book a call
+      </a>
+
+      <a class="wiggle btn btn-primary btn-lg m-4" href="/books" role="button">
+        <%= Emoji.find_by_alias("book").raw %>
+        My Book
+      </a>
+
+      <a class="wiggle btn btn-primary btn-lg m-4" href="/works" role="button">
+        <%= Emoji.find_by_alias("computer").raw %>
+        My Work
+      </a>
+
+      <a class="wiggle btn btn-primary btn-lg m-4" href="/products" role="button">
+        <%= Emoji.find_by_alias("man_factory_worker").raw %>
+        My Products
+      </a>
+    </p>
+  </div>
+
 </div>
+
