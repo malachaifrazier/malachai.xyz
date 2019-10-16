@@ -1,12 +1,50 @@
+// <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+// <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@v5.0.2/dist/amplitude.js"></script>
+
+
+// <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+// <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 /*
   1. Base
 */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  padding: 0;
+}
+
 /*
   2. Components
 */
 div.control-container {
-  margin-top: 10px;
-  padding-bottom: 10px; }
+  margin-top: 1em;//2em;//10px;
+  width: 25em;
+  padding-bottom: 10px;
+}
   div.control-container div.amplitude-play-pause {
     width: 74px;
     height: 74px;
@@ -45,15 +83,17 @@ div.control-container {
   Small only
 */
 @media screen and (max-width: 39.9375em) {
-  div.control-container div.amplitude-play-pause {
+    div.control-container div.amplitude-play-pause {
     background-size: cover;
     width: 64px;
-    height: 64px; }
+    height: 64px;
+  }
+
   div.control-container div.meta-container {
-    width: calc(100% - 74px); } }
-/*
-  Medium only
-*/
+    width: calc(100% - 74px);
+  }
+}
+
 /*
   Large Only
 */
@@ -63,20 +103,19 @@ div.time-container {
   font-weight: 100;
   font-size: 12px;
   color: #fff;
-  height: 15px; }
-  div.time-container span.current-time {
-    float: left;
-    margin-left: 5px; }
-  div.time-container span.duration {
-    float: right;
-    margin-right: 5px; }
+  height: 15px;
+}
 
-/*
-  Small only
-*/
-/*
-  Medium only
-*/
+div.time-container span.current-time {
+  float: left;
+  margin-left: 5px;
+}
+
+div.time-container span.duration {
+  float: right;
+  margin-right: 5px;
+}
+
 /*
   Large Only
 */
@@ -88,9 +127,12 @@ progress.amplitude-song-played-progress {
   height: 5px;
   display: block;
   cursor: pointer;
-  border: none; }
-  progress.amplitude-song-played-progress:not([value]) {
-    background-color: #313252; }
+  border: none;
+}
+
+progress.amplitude-song-played-progress:not([value]) {
+  background-color: #313252;
+}
 
 progress[value]::-webkit-progress-bar {
   background-color: #313252; }
@@ -102,28 +144,15 @@ progress[value]::-webkit-progress-value {
   background-color: #00a0ff; }
 
 /*
-  Small only
-*/
-/*
-  Medium only
-*/
-/*
-  Large Only
-*/
-/*
   3. Layout
 */
 div.bottom-container {
   background-color: #202136;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px; }
+  // border-top-right-radius: 10px;
+  // border-bottom-right-radius: 10px;
+  // border-bottom-left-radius: 10px;
+}
 
-/*
-  Small only
-*/
-/*
-  Medium only
-*/
 /*
   Large Only
 */
@@ -132,47 +161,44 @@ div#single-song-player {
   margin: auto;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   margin-top: 50px;
-  width: 100%;
-  max-width: 460px;
-  -webkit-font-smoothing: antialiased; }
-  div#single-song-player img[data-amplitude-song-info="cover_art_url"] {
-    width: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px; }
+  max-width: 35em;
+  // width: 24em;//35em;//100%;
+  height: 8em;//11em;
+  // max-width: 460px;
 
-a.learn-more{
-  display: block;
-  width: 300px;
-  margin: auto;
-  margin-top: 30px;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  background-color: #202136;
-  font-family: "Lato", sans-serif;
-  padding: 20px;
-  font-weight: 100;
+  /* Grid styles */
+  // display: grid;
+  // align-items: center;
+  // grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  // -webkit-font-smoothing: antialiased;
 }
+
+div#single-song-player img[data-amplitude-song-info="cover_art_url"] {
+  width: 100%;
+  height: 100%;
+  // border-top-right-radius: 10px;
+  // border-bottom-left-radius: 10px;
+  // border-top-left-radius: 10px;
+}
+
 /*
   Small only
 */
-/*
-  Medium only
-*/
-/*
-  Large Only
-*/
-/*
-  4. Pages
-*/
-/*
-  5. Themes
-*/
-/*
-  6. Utils
-*/
-/*
-  7. Vendors
-*/
+@media screen and (max-width: 320px) {
+  div.control-container {
+    margin-top: .5em;
+    width: 19em;
+  }
+
+  div#single-song-player img[data-amplitude-song-info="cover_art_url"] {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  div.control-container div.meta-container {
+    width: calc(97% - 107px);
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
