@@ -2,14 +2,15 @@
   <div class="w-100 pt-3 bg-white h-lg-100">
     <div class="h-100 text-center">
       <div class="row-fluid">
-        <div class="col-sm-8 col-md-5 col-lg-4 mx-auto w-75">
-          <div class="card">
+        <div class="col-sm-8 col-md-8 col-lg-8 mx-auto">
+          <div class="card border-dark">
             <!-- <img src="assets/images/pic_of_me.jpeg" class="card-img-top"> -->
-            <div class="card-body ">
+            <div class="card-body text-dark">
               <!-- <img src="assets/images/male-technologist-type-5.png" class="male-technologist"> -->
               <h1 class="card-title">
                 Hello, there.
               </h1>
+              <hr>
 
               <p class="card-text text-left">
                 I'm a self-taught, full-stack developer
@@ -26,12 +27,6 @@
                  <a href="https://www.netlify.com/" alt="Netlify Link"
                  title="Netlify" target="_blank">Netlify</a>.
               </p>
-              <hr>
-
-              <a class="wiggle btn btn-primary btn-lg " href="/schedule-a-call.html" role="button">
-                <%= Emoji.find_by_alias("calendar").raw %>
-                Book a call
-              </a>
             </div>
           </div>
         </div>
@@ -42,12 +37,17 @@
 
 <div class="p-0 bg-white">
   <p class="pb-5 text-center">
-    <a class="wiggle btn btn-success btn-lg m-5" href="/services" role="button">
+    <a class="wiggle btn btn-primary btn-lg m-3" href="/schedule-a-call.html" role="button">
+      <%= Emoji.find_by_alias("calendar").raw %>
+      Book a call
+    </a>
+
+    <a class="wiggle btn btn-success btn-lg m-3" href="/services" role="button">
       <%= Emoji.find_by_alias("muscle").raw %>
       Services
     </a>
 
-    <a class="wiggle btn btn-warning btn-lg m-5" href="/works" role="button">
+    <a class="wiggle btn btn-warning btn-lg m-3" href="/works" role="button">
       <%= Emoji.find_by_alias("computer").raw %>
       My Work
     </a>
