@@ -1,0 +1,115 @@
+<!-- <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form> -->
+
+<form id="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+  <p class="hidden" hidden>
+    <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+  </p>
+  <div class="form-row">
+    <div class="form-group col-md-6 ">
+      <label class="control-label" for="inputFullName">Full Name</label>
+      <input type="text" class="form-control" id="inputFullName" placeholder="Jane Doe" required name="fullName">
+      <small id="inputFullNameHelpInline" class="text-muted">
+        Required Field.
+      </small>
+    </div>
+
+    <div class="form-group required col-md-6">
+      <label class="control-label" for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="you@email.com" required name="email">
+      <small id="inputEmailHelpInline" class="text-muted">
+        Required Field.
+      </small>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPhone">Phone Number</label>
+    <input type="tel" class="form-control" id="inputPhone" placeholder="(optional)" name="phone">
+  </div>
+
+  <div class="form-group">
+    <label class="control-label" for="budget">Budget</label>
+    <select id="budget" class="form-control" name="budget">
+      <option value="I am not sure" selected>I am not sure</option>
+      <option value="$0 - $1,000">$0 - $1,000</option>
+      <option value="$1,001 - $2,000">$1,001 - $2,000</option>
+      <option value="$2,001 - $3,000">$2,001 - $3,000</option>
+      <option value="+$3,000">+$3,000</option>
+    </select>
+  </div>
+
+  <br>
+
+  <div class="form-group">
+    <label class="control-label" for="inputServices">Web Development Retainer Services</label>
+    <br>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="web-dev-one" name="web-dev-one">
+      <label class="form-check-label" for="web-dev-one">Basic Web Developer Services</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="marketing-site" name="marketing-site">
+      <label class="form-check-label" for="marketing-site">Marketing Web Site(s)</label>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="form-group">
+    <label for="inputFenceOrGate">Web Application, e-Commerce and Marketing Services</label>
+    <br>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="web-marketing" name="web-marketing">
+      <label class="form-check-label" for="web-marketing">Marketing Web Site</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="web-store" name="web-store">
+      <label class="form-check-label" for="web-store">Web Store and/or e-Commerce</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="web-app" name="web-app">
+      <label class="form-check-label" for="web-app">Web Application</label>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="form-check form-check-inline">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="not-sure" name="not-sure">
+      <label class="form-check-label" for="not-sure">I'm not sure what I need</label>
+    </div>
+  </div>
+
+  <div class="form-group mt-4">
+    <label for="inputMessage">Leave a brief message for me:</label>
+    <textarea class="form-control" id="inputMessage" rows="3" placeholder="Describe your project(s), concerns and list any links that might be relevant">
+    </textarea>
+    <small id="inputMessageHelpInline" class="text-muted">
+      Describe your project(s), concerns and list any links that might be relevant.
+    </small>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
