@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-ruby "2.6.5"
+ruby "3.1.2"
 
-gem "bourbon"
+# gem "bourbon"
 # gem "bitters"
 gem "builder"
 gem "middleman"
@@ -13,7 +13,7 @@ gem "middleman-minify-html"
 gem "middleman-livereload"
 # https://github.com/middleman/middleman-blog
 # gem "middleman-blog"
-gem "middleman-pry"
+# gem "middleman-pry"
 gem "neat"
 gem "redcarpet"
 gem "sassc"
