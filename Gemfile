@@ -14,5 +14,3 @@ gem 'middleman-livereload', '~> 3.4', '>= 3.4.7'
 # gem "middleman-pry"
 gem 'redcarpet', '~> 3.5', '>= 3.5.1'
 gem 'sassc', '~> 2.4'
-gem "gemoji", path: "lib/gemoji"
-# gem "gemoji", git: "git@github.com:github/gemoji.git", branch: "master", path: "gemoji"
