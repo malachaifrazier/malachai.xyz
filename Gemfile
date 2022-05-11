@@ -2,8 +2,6 @@ source "https://rubygems.org"
 
 ruby '3.1.2'
 
-# gem 'bourbon'#, '~> 7.2'
-# gem "bitters"
 gem 'builder', '~> 3.2', '>= 3.2.4'
 gem 'middleman', '~> 4.4', '>= 4.4.2'
 gem 'middleman-aria_current', '~> 0.1.2'

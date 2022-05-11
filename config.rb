@@ -59,7 +59,7 @@ end
 configure :development do
   set      :debug_assets, true
   activate :livereload
-  activate :pry
+  # activate :pry
 end
 
 configure :build do
