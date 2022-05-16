@@ -43,7 +43,7 @@ page "/*.txt", layout: false
 page "/*.xml", layout: false
 
 [
-  'schedule-a-call', 'services', 'works', 'blog', 'products', 'books', 'contact'
+  'schedule-a-call', 'services', 'works', 'blog', 'products', 'books', 'contact', 'resume'
 ].each do |name|
   page "/#{name}.html"
 end
