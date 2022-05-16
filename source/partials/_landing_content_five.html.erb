@@ -38,17 +38,17 @@
 <div class="p-0 bg-white">
   <p class="pb-5 text-center">
     <a class="wiggle btn btn-primary btn-lg m-3" href="/schedule-a-call.html" role="button">
-      <%= Emoji.find_by_alias("calendar").raw %>
+      <%#= Emoji.find_by_alias("calendar").raw %>
       Book a call
     </a>
 
     <a class="wiggle btn btn-success btn-lg m-3" href="/services" role="button">
-      <%= Emoji.find_by_alias("muscle").raw %>
+      <%#= Emoji.find_by_alias("muscle").raw %>
       Services
     </a>
 
     <a class="wiggle btn btn-warning btn-lg m-3" href="/works" role="button">
-      <%= Emoji.find_by_alias("computer").raw %>
+      <%#= Emoji.find_by_alias("computer").raw %>
       My Work
     </a>
 
@@ -69,19 +69,4 @@
   </p>
 </div>
 
-
-<div class="row-fluid mb-5">
-  <div class="col-sm-8 col-md-8 col-lg-8 mx-auto" id="contact-card">
-    <div class="card border-dark">
-      <div class="card-body text-dark">
-        <h1 class="card-title text-center">
-          Contact me.
-        </h1>
-        <hr>
-        <p class="card-text">
-          <%#= partial 'partials/contact-form' %>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+<%#= partial 'partials/contact-section' %>
