@@ -94,7 +94,9 @@ GEM
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
     minitest (5.15.0)
-    nokogiri (1.13.4-x86_64-darwin)
+    nokogiri (1.13.6-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     padrino-helpers (0.15.1)
       i18n (>= 0.6.7, < 2)
@@ -130,6 +132,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   builder (~> 3.2, >= 3.2.4)
